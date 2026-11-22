@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=64"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,8 +7,9 @@ name = "mydonut"
 version = "0.1.0"
 description = "A configurable, animated, interactive ASCII donut for your terminal."
 readme = "README.md"
-requires-python = ">=3.9"
-license = { text = "MIT" }
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Pravir Nihar Maity" }]
 keywords = ["ascii", "donut", "terminal", "animation", "cli", "numpy"]
 classifiers = [
