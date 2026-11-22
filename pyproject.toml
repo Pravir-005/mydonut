@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mydonut"
+version = "0.1.0"
+description = "A configurable, animated, interactive ASCII donut for your terminal."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Pravir Nihar Maity" }]
+keywords = ["ascii", "donut", "terminal", "animation", "cli", "numpy"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Artistic Software",
+    "Topic :: Terminals",
+]
+dependencies = ["numpy>=1.22"]
+
+[project.optional-dependencies]
+dev = ["pytest", "build", "twine"]
+
+[project.urls]
+Homepage = "https://github.com/Pravir-005/mydonut"
+Issues = "https://github.com/Pravir-005/mydonut/issues"
+
+[project.scripts]
+mydonut = "mydonut.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mydonut = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
