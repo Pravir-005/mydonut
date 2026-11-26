@@ -1,4 +1,4 @@
-<img width="1672" height="941" alt="Neon ASCII Donut Terminal Banner" src="https://github.com/user-attachments/assets/f7a34dc0-727a-49f3-8e3d-080a4deb38e5" /># mydonut
+# mydonut
 
 <p align="center">
   <img src="Neon ASCII Donut Terminal Banner.png" alt="mydonut — a customizable ASCII donut for your terminal" width="100%">
